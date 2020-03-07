@@ -1,0 +1,109 @@
+@font-face {
+    font-family: AmericanTypewriter;
+    src: url(../font/AmericanTypewriterBold.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide {
+    background-size: cover;
+}
+
+#section0 {
+    background-image: url(../images/Forest.jpg);
+}
+
+#section1 {
+    background-image: url(../images/Lake.jpg);
+}
+
+#section2 {
+    background-image: url(../images/Windmill.jpg);
+}
+
+#section3 {
+    background-image: url(../images/Market.jpg);
+    height: 100%;
+}
+
+#section4 {
+    background-image: url(../images/Farm.jpg);
+}
+
+#section5 {
+    background-image: url(../images/Hotel.jpg);
+}
+
+#section6 {
+    background-image: url(../images/Factory.jpg);
+}
+
+#section7 {
+    background-image: url(../images/RichHouse.jpg);
+}
+
+#section8 {
+    background-image: url(../images/Station.jpg);
+}
+
+#section9 {
+    background-image: url(../images/TechHouse.jpg);
+}
+
+.text {
+    font-family: AmericanTypewriter;
+    font-size: 55px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: #ffffcc;
+    margin: 0;
+    text-shadow: 2px 2px 6px #000;
+    text-align: center;
+}
+
+.button {
+    font-family: AmericanTypewriter;
+    font-size: 30px;
+    color: #ffffcc;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.button:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.button-container {
+    padding-top: 20%;
+}
