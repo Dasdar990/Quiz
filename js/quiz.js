@@ -96,36 +96,6 @@
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
-    /* const myQuestions = [{
-            question: 'Question 1?',
-            answers: {
-                a: '1',
-                b: '2',
-                c: '3'
-            },
-            correctAnswer: 'c'
-        },
-        {
-            question: 'Question 2?',
-            answers: {
-                a: '1.js',
-                b: '2',
-                c: '3'
-            },
-            correctAnswer: 'c'
-        },
-        {
-            question: 'Question 3?',
-            answers: {
-                a: '1',
-                b: '2',
-                c: '3',
-                d: '4'
-            },
-            correctAnswer: 'd'
-        }
-    ];
-    */
 
     // Kick things off
     buildQuiz();
