@@ -40,12 +40,12 @@ body {
 }
 
 #section3 {
-    background-image: url(../images/Market.jpg);
+    background-image: url(../images/Farm.jpg);
     height: 100%;
 }
 
 #section4 {
-    background-image: url(../images/Farm.jpg);
+    background-image: url(../images/Market.jpg);
 }
 
 #section5 {
@@ -53,11 +53,11 @@ body {
 }
 
 #section6 {
-    background-image: url(../images/Factory.jpg);
+    background-image: url(../images/RichHouse.jpg);
 }
 
 #section7 {
-    background-image: url(../images/RichHouse.jpg);
+    background-image: url(../images/Factory.jpg);
 }
 
 #section8 {
