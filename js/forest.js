@@ -1,29 +1,37 @@
 const myQuestions = [{
-        question: 'Question 1?',
+        question: 'What is deforestation? ',
         answers: {
-            a: '1',
-            b: '2',
-            c: '3'
+            a: 'It is a phenomena that happens when people move forest to different areas',
+            b: 'It is the permanent removal of trees to make room for something different',
+            c: 'It is the natural destruction of forests'
         },
-        correctAnswer: 'c'
+        correctAnswer: 'b'
     },
     {
-        question: 'Question 2?',
+        question: 'Deforestation happens most in Tropical rainforests?',
         answers: {
-            a: '1.js',
-            b: '2',
-            c: '3'
+            a: 'True',
+            b: 'False'
         },
-        correctAnswer: 'c'
+        correctAnswer: 'a'
     },
     {
-        question: 'Question 3?',
+        question: 'Which area in the world is the most affected by deforestation?',
         answers: {
-            a: '1',
-            b: '2',
-            c: '3',
-            d: '4'
+            a: 'The Amazon',
+            b: 'The Philippines',
+            c: 'Indonesia',
+            d: 'The Atlantic Forest'
         },
-        correctAnswer: 'd'
+        correctAnswer: 'a'
+    },
+    {
+        question: 'How many animals, plants and insect species are we losing each day due to deforestation?',
+        answers: {
+            a: '49',
+            b: '115',
+            c: '135'
+        },
+        correctAnswer: 'c'
     }
 ];
