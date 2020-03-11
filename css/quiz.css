@@ -96,3 +96,7 @@ button {
     width: 97%;
     border-radius: 10px;
 }
+
+.radio-custom:checked~label {
+    background-color: blue;
+}

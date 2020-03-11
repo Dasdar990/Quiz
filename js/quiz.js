@@ -13,8 +13,8 @@
             for (letter in currentQuestion.answers) {
                 // ...add an HTML radio button
                 answers.push(
-                    `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
+                    `<label for="letter">
+                <input type="radio" class="radio-custom" id="${letter}" name="question${questionNumber}" value="${letter}">
                 ${letter} :
                 ${currentQuestion.answers[letter]}
               </label>`
