@@ -79,8 +79,11 @@ button {
     position: relative;
 }
 
-.background {
+.forest {
     background-image: url(../images/Forest.jpg);
+}
+
+.background {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
