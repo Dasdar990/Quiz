@@ -7,3 +7,7 @@ function setQuiz() {
     const back = document.getElementById('back');
     back.style.backgroundImage = 'url(images/' + localStorage.getItem('quizvar') + '.jpg)';
 }
+
+function home() {
+    window.location = 'index.html';
+}

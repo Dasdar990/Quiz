@@ -79,15 +79,16 @@ button {
     position: relative;
 }
 
-.forest {
-    background-image: url(../images/Forest.jpg);
-}
-
 .background {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 #quiz {

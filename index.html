@@ -1,103 +1,115 @@
 <html>
 
 <head>
+
+    <title>Quiz HomePage</title>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/hsilder.css">
     <link rel="icon" type="image/png" href="images/favicon.ico">
-    <title>Quiz HomePage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.HSlider.min.js"></script>
+
 </head>
 
 <body>
-    <div id="fullpage">
-        <div class="section " id="section0">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE FOREST</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Forest" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section" id="section1">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE LAKE</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Lake" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section" id="section2">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE WINDMILL</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Windmill" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section3">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE FARM</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Farm" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section4">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE MARKET</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Market" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section5">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE HOTEL</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Hotel" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section6">
-            <div class="text-container">
-                <div class="text">WELCOME TO MR. GREEN'S HOUSE</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="MrGreen" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section7">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE FACTORY</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Factory" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section8">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE TRAIN STATION</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Station" class="button">PLAY</button></a>
-            </div>
-        </div>
-        <div class="section " id="section9">
-            <div class="text-container">
-                <div class="text">WELCOME TO THE MR. TECH'S HOUSE</div>
-            </div>
-            <div class="button-container">
-                <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="MrTech" class="button">PLAY</button></a>
-            </div>
+
+    <div class="wrap">
+        <div class="slider">
+            <section id="section0">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE FOREST</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Forest" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section1">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE LAKE</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Lake" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE WINDMILL</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Windmill" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section3">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE FARM</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Farm" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE MARKET</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Market" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section5">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE HOTEL</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Hotel" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section6">
+                <div class="text-container">
+                    <div class="text">WELCOME TO TO MR. GREEN'S HOUSE</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="MrGreen" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section7">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE FACTORY</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Factory" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section8">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE TRAIN STATION</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Station" class="button">PLAY</button></a>
+                </div>
+            </section>
+            <section id="section9">
+                <div class="text-container">
+                    <div class="text">WELCOME TO THE MR. TECH'S HOUSE</div>
+                </div>
+                <div class="button-container">
+                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="MrTech" class="button">PLAY</button></a>
+                </div>
+            </section>
         </div>
     </div>
+
+
+
+    <script type="text/javascript">
+        $(".slider").HSlider();
+    </script>
+    <script src="js/main.js"></script>
+
 </body>
-
-<script type="text/javascript" src="js/scrolling.js"></script>
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        verticalCentered: false
-    });
-</script>
-<script src="js/main.js"></script>
-
-</html>

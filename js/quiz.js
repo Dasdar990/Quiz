@@ -31,11 +31,32 @@
         });
 
         // finally combine our output list into one string of HTML and put it on the page
+        output.push(
+            ` <div class="slide">
+                <div id="results"></div>
+              </div>`
+        );
         quizContainer.innerHTML = output.join('');
     }
 
+    function checkAll() {
+        var a = 0;
+        for (var i = 0; i < myQuestions.length; i++) {
+            var radio = document.getElementsByName('question' + i);
+            for (var j = 0; j < radio.length; j++)
+                if (radio[j].checked) {
+                    a++;
+                    break;
+                }
+        }
+        if (a == myQuestions.length) return true;
+    }
+
     function showResults() {
-        // gather answer containers from our quiz
+        if (!checkAll()) {
+            //give error
+            return;
+        }
         const answerContainers = quizContainer.querySelectorAll('.answers');
 
         // keep track of user's answers
@@ -63,6 +84,9 @@
         });
 
         // show number of correct answers out of total
+
+        showNextSlide();
+        const resultsContainer = document.getElementById('results');
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
 
@@ -75,12 +99,18 @@
         } else {
             previousButton.style.display = 'inline-block';
         }
-        if (currentSlide === slides.length - 1) {
+        if (currentSlide === slides.length - 2) {
             nextButton.style.display = 'none';
             submitButton.style.display = 'inline-block';
         } else {
             nextButton.style.display = 'inline-block';
             submitButton.style.display = 'none';
+        }
+
+        if (currentSlide === myQuestions.length) {
+            nextButton.style.display = 'none';
+            submitButton.style.display = 'none';
+            previousButton.style.display = 'none';
         }
     }
 
@@ -94,7 +124,7 @@
 
     // Variables
     const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
+
     const submitButton = document.getElementById('submit');
 
     //Questions
@@ -401,7 +431,6 @@
             correctAnswer: 'c'
         }
     ];
-
     const myQuestions = questions[localStorage.getItem('quizvar')];
 
     // Kick things off
