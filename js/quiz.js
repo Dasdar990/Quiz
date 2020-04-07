@@ -32,8 +32,8 @@
 
         // finally combine our output list into one string of HTML and put it on the page
         output.push(
-            ` <div class="slide">
-                <div id="results"></div>
+            ` <div class='slide'>
+                    <div id="results-container"><div id='score-title'>Your Score is</div><div id='results-text'></div></div>
               </div>`
         );
         quizContainer.innerHTML = output.join('');
@@ -54,7 +54,7 @@
 
     function showResults() {
         if (!checkAll()) {
-            //give error
+            errorContainer.style.display = 'block';
             return;
         }
         const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -68,25 +68,12 @@
             const answerContainer = answerContainers[questionNumber];
             const selector = `input[name=question${questionNumber}]:checked`;
             const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-            // if answer is correct
-            if (userAnswer === currentQuestion.correctAnswer) {
-                // add to the number of correct answers
-                numCorrect++;
-
-                // color the answers green
-                answerContainers[questionNumber].style.color = 'lightgreen';
-            } else {
-                // if answer is wrong or blank
-                // color the answers red
-                answerContainers[questionNumber].style.color = 'red';
-            }
         });
 
         // show number of correct answers out of total
 
         showNextSlide();
-        const resultsContainer = document.getElementById('results');
+        const resultsContainer = document.getElementById('results-text');
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
 
@@ -119,6 +106,7 @@
     }
 
     function showPreviousSlide() {
+        if (errorContainer.style.display == 'block') errorContainer.style.display = 'none';
         showSlide(currentSlide - 1);
     }
 
@@ -439,6 +427,7 @@
     // Pagination
     const previousButton = document.getElementById('previous');
     const nextButton = document.getElementById('next');
+    const errorContainer = document.getElementById('error');
     const slides = document.querySelectorAll('.slide');
 
     let currentSlide = 0;
