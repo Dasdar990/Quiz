@@ -103,6 +103,7 @@
 
     function showNextSlide() {
         showSlide(currentSlide + 1);
+        if (errorContainer.style.display == 'block') errorContainer.style.display = 'none';
     }
 
     function showPreviousSlide() {

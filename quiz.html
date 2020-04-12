@@ -10,19 +10,21 @@
 </head>
 
 <body onload="setQuiz()">
-    <div class="full-size-container background" id="back">
-        <div id="quiz">
+    <div class="background" id="back">
+        <div class="top">
+            <div id="quiz">
+            </div>
         </div>
-        <div class="button-container">
-            <button class="button" id="previous"><i class="material-icons">arrow_back</i></button>
-            <button class="button" id="next"><i class="material-icons">arrow_forward</i></button>
-            <button class="button" id="submit"><i class="material-icons">check</i></button>
-        </div>
-        <div class="button-container">
-            <button onclick="home()" class="button"><i class="material-icons">home</i></button>
-        </div>
-        <div class="error-container" id="error">
-            <div class="error-text"> Complete all the questions!</div>
+        <div class="bottom">
+            <div class="error-container" id="error">
+                <div class="error-text"> Complete all the questions!</div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="button" id="previous"><i class="material-icons">arrow_back</i></button>
+                <button onclick="home()" class="button"><i class="material-icons">home</i></button>
+                <button class="button" id="next"><i class="material-icons">arrow_forward</i></button>
+                <button class="button" id="submit"><i class="material-icons">check</i></button>
+            </div>
         </div>
     </div>
 </body>

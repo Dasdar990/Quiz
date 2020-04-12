@@ -15,10 +15,11 @@ body {
     margin-bottom: 10px;
     background-color: white;
     border-radius: 10px;
-    padding: 5px;
-    padding-top: 25px;
-    height: 250px;
+    height: 30vh;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .answers {
@@ -36,13 +37,36 @@ body {
     border: 1px solid black;
 }
 
-.button-container {
+.top {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: normal;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+}
+
+.bottom {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navigation-buttons {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
+.home {}
 
 button {
     font-family: 'Work Sans', sans-serif;
@@ -73,16 +97,8 @@ button {
     display: block;
 }
 
-.full-size-container {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    justify-content: normal;
-    align-items: center;
-    position: relative;
-}
-
 .background {
+    width: 100%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,8 +111,7 @@ a {
 }
 
 #quiz {
-    width: 97%;
-    padding-top: 15px;
+    width: 97vh;
 }
 
 #results-container {
@@ -122,12 +137,10 @@ a {
 }
 
 .error-container {
-    width: 96%;
+    width: 96vh;
     height: 50px;
-    position: fixed;
     z-index: 5;
     background-color: #ed3330;
-    bottom: 10;
     border-radius: 10px;
     border: 1px solid black;
     display: none;

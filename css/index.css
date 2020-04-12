@@ -27,6 +27,10 @@ body {
     background-size: cover;
 }
 
+#section-start {
+    background-image: url(../images/Start.jpg);
+}
+
 #section0 {
     background-image: url(../images/Forest.jpg);
 }
