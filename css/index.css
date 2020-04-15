@@ -82,9 +82,3 @@
             height: 28px;
             margin: 0px 15px 0px 15px;
         }
-        
-        @media not all and (pointer: coarse) {
-            .quiz-location:hover {
-                background: #30445C;
-            }
-        }
