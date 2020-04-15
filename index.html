@@ -1,123 +1,60 @@
 <html>
 
 <head>
-
-    <title>Quiz HomePage</title>
+    <title>Quiz</title>
     <meta charset="UTF-8">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/hsilder.css">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.HSlider.min.js"></script>
-
 </head>
 
 <body>
-
-    <div class="wrap">
-        <div class="slider">
-            <section id="section-start">
-                <div class="text-container">
-                    <div class="text">WELCOME</div>
-                </div>
-                <div class="button-container">
-                    <span class="material-icons bounce">arrow_forward</span>
-                </div>
-            </section>
-            <section id="section0">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE FOREST</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Forest" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section1">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE LAKE</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Lake" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section2">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE WINDMILL</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Windmill" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section3">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE FARM</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Farm" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section4">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE MARKET</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Market" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section5">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE HOTEL</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Hotel" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section6">
-                <div class="text-container">
-                    <div class="text">WELCOME TO TO MR. GREEN'S HOUSE</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="MrGreen" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section7">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE FACTORY</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Factory" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section8">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE TRAIN STATION</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="Station" class="button">PLAY</button></a>
-                </div>
-            </section>
-            <section id="section9">
-                <div class="text-container">
-                    <div class="text">WELCOME TO THE MR. TECH'S HOUSE</div>
-                </div>
-                <div class="button-container">
-                    <a href="quiz.html"> <button onclick="selectQuiz(this.id)" id="MrTech" class="button">PLAY</button></a>
-                </div>
-            </section>
+    <div class="top-container">
+        <div class="top-text">Choose a Quiz</div>
+    </div>
+    <div class="list-container">
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/forest.svg" alt="Forest Icon"></div>
+            <div class="quiz-text">The Forest</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/lake.svg" alt="Lake Icon"></div>
+            <div class="quiz-text">The Lake</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/windmill.svg" alt="Windmill Icon"></div>
+            <div class="quiz-text">The Windmill</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/farm.svg" alt="Farm Icon"></div>
+            <div class="quiz-text">The Farm</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/market.svg" alt="Market Icon"></div>
+            <div class="quiz-text">The Market</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/hotel.svg" alt="Hotel Icon"></div>
+            <div class="quiz-text">The Hotel</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/green.svg" alt="GreenHouse Icon"></div>
+            <div class="quiz-text">Mr. Green's House</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/factory.svg" alt="Factory Icon"></div>
+            <div class="quiz-text">The Factory</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/train.svg" alt="Train Icon"></div>
+            <div class="quiz-text">The Train Station</div>
+        </div>
+        <div class="quiz-location">
+            <div class="quiz-icon"><img src="images/tech.svg" alt="Tech Icon"></div>
+            <div class="quiz-text">Mr. Tech's House</div>
         </div>
     </div>
 
-
-
-    <script type="text/javascript">
-        $(".slider").HSlider();
-    </script>
-    <script src="js/main.js"></script>
-
 </body>
+
+</html>

@@ -1,200 +1,62 @@
-@font-face {
-    font-family: Oxygen;
-    src: url(../font/Oxygen-Bold.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 body {
+    background: #242A40;
     margin: 0;
 }
 
-section {
-    display: flex !important;
+.top-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #2E425A;
+    box-shadow: 0px 4px 8px rgba(51, 51, 51, 0.07);
 }
 
-.button-container {
-    margin-top: 15%;
+.top-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 90%;
+    height: 70px;
+    color: #FFFFFF;
 }
 
-.slide {
-    background-size: cover;
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
-#section-start {
-    background-image: url(../images/Start.jpg);
-}
-
-#section0 {
-    background-image: url(../images/Forest.jpg);
-}
-
-#section1 {
-    background-image: url(../images/Lake.jpg);
-}
-
-#section2 {
-    background-image: url(../images/Windmill.jpg);
-}
-
-#section3 {
-    background-image: url(../images/Farm.jpg);
-}
-
-#section4 {
-    background-image: url(../images/Market.jpg);
-}
-
-#section5 {
-    background-image: url(../images/Hotel.jpg);
-}
-
-#section6 {
-    background-image: url(../images/RichHouse.jpg);
-}
-
-#section7 {
-    background-image: url(../images/Factory.jpg);
-}
-
-#section8 {
-    background-image: url(../images/Station.jpg);
-}
-
-#section9 {
-    background-image: url(../images/TechHouse.jpg);
-}
-
-.text {
-    font-family: Oxygen;
-    font-size: 55px;
-    text-shadow: 2px 2px 6px #000;
-    text-align: center;
-    color: #ffffcc;
-    margin: 0;
-    padding: 5px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-.button {
-    font-family: Oxygen;
-    font-size: 30px;
-    color: #ffffcc;
-    text-align: center;
-    text-decoration: none;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    background: #ed3330;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
-}
-
-.button:hover {
-    background: #434343;
-    letter-spacing: 1px;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-    transition: all 0.4s ease 0s;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.pagination {
+.quiz-location {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 5;
-    list-style: none;
-    width: 100%;
+    width: 90%;
+    height: 60px;
+    margin-bottom: 15px;
+    background: #30445C;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
 }
 
-.pagination li {
-    padding: 5px;
-    width: 16px;
-    height: 16px;
+.quiz-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
 }
 
-.pagination li a {
-    margin: 0 auto;
-    width: 13px;
-    height: 13px;
-    display: block;
-    background: white;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-}
-
-.pagination li a:hover,
-.pagination li a.active {
-    margin: 0 auto;
-    width: 13px;
-    height: 13px;
-    display: block;
-    background: black;
-    border-radius: 13px;
-    border: 1px solid white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 13px;
-    -webkit-transition: all 0.5s ease;
-}
-
-.bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-    font-size: 70px !important;
-    color: #ffffcc;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
-
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateX(0);
-    }
-    40% {
-        transform: translateX(30px);
-    }
-    60% {
-        transform: translateX(15px);
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .slider h1 {
-        font-size: 50px;
-    }
-    .slider h2 {
-        font-size: 30px;
-    }
-    .slider h3 {
-        font-size: 22px;
-        margin-top: 8px;
-        margin-right: 10px;
-    }
+.quiz-icon {
+    width: 28px;
+    height: 28px;
+    margin: 0px 15px 0px 15px;
 }
