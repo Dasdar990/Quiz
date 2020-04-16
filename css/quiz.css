@@ -126,9 +126,6 @@ a {
 }
 
 .answers-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     width: 100%;
     margin: 10px;
 }
@@ -156,13 +153,21 @@ a {
     margin: 0 10px 0 10px;
 }
 
+.x {
+    background: #CCDDE7;
+}
+
+.x img {
+    filter: invert(66%) sepia(27%) saturate(3380%) hue-rotate(338deg) brightness(93%) contrast(93%);
+}
+
 .answer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #ccdde7;
     border-radius: 50px;
-    margin: 15px;
+    margin: 20px;
     padding: 5px;
     font-family: Montserrat;
     font-style: normal;
@@ -183,10 +188,6 @@ a {
     color: #2d3043;
 }
 
-input[type="radio"]:checked+label {
-    background-color: #e6812f;
-}
-
 .answer .answer-letter:last-child {
     visibility: hidden;
 }
@@ -195,7 +196,11 @@ input[type="radio"]:checked+label {
     background-color: #ccc;
 }
 
-.answer input:checked {
+.highlighted {
+    background: #e6812f;
+}
+
+.highlighted:hover {
     background: #e6812f;
 }
 
