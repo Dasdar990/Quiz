@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>JS Quiz</title>
+    <title></title>
     <meta charset="UTF-8">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
@@ -10,12 +10,51 @@
 
 <body>
     <div class="top-container">
-        <div class="top-icon"><img src="images/forest.svg" alt="Icon"></div>
-        <div class="top-text"> The forest </div>
+        <div class="top-icon"><img id="icon" alt="Icon"></div>
+        <div class="top-text" id="title"></div>
         <div class="top-close">
             <a href="index.html"><img src="images/close.svg" alt="Close"></a>
         </div>
     </div>
+
+    <div class="navigation-container">
+        <div class="navigation-number navigation-number-a">1</div>
+        <div class="navigation-number">2</div>
+        <div class="navigation-number">3</div>
+        <div class="navigation-number">4</div>
+    </div>
+    <div class="quiz-container">
+        <div class="slide-container-active">
+            <div class="question-container">
+                1. What is deforenstation?
+            </div>
+            <div class="answers-container">
+                <label class="answer"><input type="radio"  name="radio"><span class="answer-letter">A</span> Answer 1 </label>
+                <label class="answer"><input type="radio"  name="radio"><span class="answer-letter">B</span>Answer 2 </label>
+                <label class="answer"><input type="radio"  name="radio"><span class="answer-letter">C</span>Answer 3 </label>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="score-elements-container">
+                <div class="score-icon"><img src="images/score.svg" alt="Cup"></div>
+                <p class="score-congrats">Congrats!</p>
+                <p class="score-percentage">75% Score!</p>
+                <p class="score-success">Quiz Completed Successfully.</p>
+                <p class="score-text">You attempted a certain number of question and a number of that were correct</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="button">EXIT</div>
+            <div class="button">GO BACK</div>
+            <div class="button">NEXT</div>
+            <div class="button">SUBMIT</div>
+        </div>
+    </div>
 </body>
+
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
 
 </html>

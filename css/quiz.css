@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 body {
-    background: #242A40;
+    background: #242a40;
     margin: 0;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+.answer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .top-container {
@@ -14,7 +22,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #2E425A;
+    background: #2e425a;
     box-shadow: 0px 4px 8px rgba(51, 51, 51, 0.07);
 }
 
@@ -28,8 +36,9 @@ a {
     font-weight: 400;
     font-size: 18px;
     height: 70px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: context-menu;
+    width: 100%;
 }
 
 .top-icon {
@@ -39,12 +48,215 @@ a {
 }
 
 .top-close {
-    position: absolute;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
-    width: 100%;
     height: 70px;
-    margin-right: 30px;
+    margin-right: 20px;
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.navigation-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.navigation-number {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.navigation-number-a {
+    background-color: #e6812f;
+    cursor: default;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-container {
+    display: none;
+}
+
+.slide-container-active {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 10px;
+    padding-left: 40px;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 10px;
+}
+
+.answer-letter {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.answer-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #e6812f;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border-radius: 50px;
+    margin: 0 10px 0 10px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    background: #ccdde7;
+    border-radius: 50px;
+    margin: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2d3043;
+    cursor: pointer;
+}
+
+.answer:hover input~.answer-letter {
+    background-color: #ccc;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccdde7;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2d3043;
+    margin: 10px;
+}
+
+.score-elements-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #ccdde7;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 10px;
+}
+
+.score-icon {
+    width: 103px;
+    height: 76px;
+    margin: 0px 20px;
+}
+
+.score-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    max-width: 400px;
+}
+
+.score-success {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.score-congrats {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.score-percentage {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #29c061;
 }
