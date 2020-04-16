@@ -159,10 +159,11 @@ a {
 .answer {
     display: flex;
     align-items: center;
-    height: 58px;
+    justify-content: space-between;
     background: #ccdde7;
     border-radius: 50px;
     margin: 15px;
+    padding: 5px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -172,8 +173,34 @@ a {
     cursor: pointer;
 }
 
-.answer:hover input~.answer-letter {
+.answer-text {
+    flex: 1;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2d3043;
+}
+
+.answer .answer-letter:last-child {
+    visibility: hidden;
+}
+
+.answer:hover {
     background-color: #ccc;
+}
+
+.answer input:checked~span {
+    background: #e6812f;
+}
+
+.answer input:checked~.answer-letter:first-of-type {
+    visibility: hidden;
+}
+
+.answer input:checked~.answer-letter:last-child {
+    visibility: visible;
 }
 
 .button-container {
