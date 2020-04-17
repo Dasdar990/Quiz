@@ -126,7 +126,7 @@ $(document).ready(function() {
         const resultsContainer = document.getElementById('score-text');
         const scorePercentage = document.getElementById('score-percentage');
 
-        var percentage = numCorrect / myQuestions.length * 100;
+        var percentage = Math.trunc(numCorrect / myQuestions.length * 100);
         scorePercentage.innerHTML = ` ${percentage} % Score`;
         resultsContainer.innerHTML = `text to customize ${numCorrect} out of ${myQuestions.length}`;
     }
