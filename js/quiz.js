@@ -67,10 +67,10 @@ $(document).ready(function() {
     function showSlide(n) {
         slides[currentSlide].classList.remove('slide-container-active');
         slides[n].classList.add('slide-container-active');
-
+        /*
         navigators[currentSlide].classList.remove('navigation-number-a');
         navigators[n].classList.add('navigation-number-a');
-
+*/
         currentSlide = n;
         if (currentSlide === 0) {
             previousButton.style.display = 'none';
