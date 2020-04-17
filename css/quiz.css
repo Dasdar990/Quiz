@@ -122,7 +122,15 @@ a {
     font-size: 14px;
     line-height: 17px;
     margin: 10px;
-    padding-left: 40px;
+}
+
+.question-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    margin: 0 30px;
+    text-align: justify;
 }
 
 .answers-container {
@@ -150,11 +158,11 @@ a {
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
     color: #ffffff;
     border-radius: 50px;
-    margin: 0 10px 0 10px;
+    text-transform: uppercase;
 }
 
 .x {
-    background: #CCDDE7;
+    background: #ccdde7;
 }
 
 .x img {
@@ -186,6 +194,7 @@ a {
     font-size: 12px;
     line-height: 15px;
     color: #2d3043;
+    margin: 0 10px;
 }
 
 .answer .answer-letter:last-child {
@@ -197,7 +206,20 @@ a {
 }
 
 .highlighted {
-    background: #e6812f;
+    animation: highlight 0.5s linear 1 forwards;
+}
+
+.unchecked {
+    animation: highlight 0.5s linear 1 forwards reverse;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: #ccdde7;
+    }
+    100% {
+        background-color: #e6812f;
+    }
 }
 
 .highlighted:hover {
@@ -238,25 +260,26 @@ a {
     line-height: 20px;
     color: #2d3043;
     margin: 10px;
+    cursor: pointer;
 }
 
 .score-elements-container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     background: #ccdde7;
     border-radius: 15px;
     max-width: 700px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .score-icon {
     width: 103px;
     height: 76px;
-    margin: 0px 20px;
+    margin: 20px;
 }
 
 .score-text {
@@ -268,6 +291,7 @@ a {
     text-align: center;
     color: #000000;
     max-width: 400px;
+    margin: 20px;
 }
 
 .score-success {
@@ -277,6 +301,7 @@ a {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    margin: 20px;
 }
 
 .score-congrats {
@@ -286,6 +311,7 @@ a {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    margin: 20px;
 }
 
 .score-percentage {
@@ -295,4 +321,5 @@ a {
     font-size: 36px;
     line-height: 44px;
     color: #29c061;
+    margin: 20px;
 }
