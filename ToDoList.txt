@@ -1,4 +1,1 @@
-1) make all answer box clickable with effects
-2) add section-start index
-3)fix all fonts with em
-4)make non runnable on certain devices or fix and test responsive on non-mobile devices
+
