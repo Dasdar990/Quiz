@@ -25,6 +25,25 @@
 /*************************/
 
 
+/* CURSOR */
+
+
+/*************************/
+
+.navigation-number,
+.answer,
+.button {
+    cursor: pointer;
+}
+
+.top-text {
+    cursor: context-menu;
+}
+
+
+/*************************/
+
+
 /* NAVIGATION_NUMBER CSS */
 
 
@@ -38,7 +57,11 @@
 }
 
 .navigation-container>.navigation-number {
-    margin: 0 15px;
+    height: 24px;
+    width: 24px;
+    border-radius: 30px;
+    margin: 0 10px;
+    text-align: center;
 }
 
 .navigation-container>.navigation-number:first-child {
@@ -47,6 +70,10 @@
 
 .navigation-container>.navigation-number:last-child {
     margin-right: 0;
+}
+
+.navigation-number-active {
+    background: #e6812f;
 }
 
 
@@ -156,6 +183,10 @@
     background-color: #ccdde7;
     margin: 0 7.5px;
     white-space: nowrap;
+}
+
+.button:focus {
+    background: #e6812f;
 }
 
 

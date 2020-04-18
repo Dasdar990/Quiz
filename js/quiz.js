@@ -37,10 +37,12 @@ $(document).ready(function() {
     function showSlide(n) {
         slides[currentSlide].classList.remove('active');
         slides[n].classList.add('active');
-        /*
-        navigators[currentSlide].classList.remove('navigation-number-a');
-        navigators[n].classList.add('navigation-number-a');
-*/
+        navigators[currentSlide].classList.remove('navigation-number-active');
+
+        if (n != myQuestions.length) {
+            navigators[n].classList.add('navigation-number-active');
+        }
+
         currentSlide = n;
         if (currentSlide === 0) {
             previousButton.style.display = 'none';
@@ -92,7 +94,7 @@ $(document).ready(function() {
             if (userAnswer === currentQuestion.correctAnswer) numCorrect++;
         });
 
-        showNextSlide();
+        showSlide(myQuestions.length);
         const resultsContainer = document.getElementById('score-text');
         const scorePercentage = document.getElementById('score-percentage');
 
