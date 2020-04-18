@@ -136,6 +136,7 @@ $(document).ready(function() {
     var currentSlide = 0;
     showSlide(currentSlide);
 
+    for (i = 0; i < navigators.length; i++) navigators[i].addEventListener('click', showSlideNav);
     homeButton.addEventListener('click', home);
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener('click', showPreviousSlide);
