@@ -7,23 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div class="top-container">
-        <div class="top-icon"><img id="icon" alt="Icon"></div>
-        <div class="top-text" id="title"></div>
-        <div class="top-close">
-            <a href="index.html"><img src="images/close.svg" alt="Close"></a>
-        </div>
-    </div>
-    <div class="navigation-container" id="navigation-container"></div>
-    <div class="quiz-container" id="quiz-container">
-    </div>
+    <div class="quiz">
+        <div class="top-container">
+            <div class="top-title">
+                <span class="top-icon">
+                    <img id="icon" alt="Icon" src="">
+                </span>
 
+                <span class="top-text" id="title"></span>
+            </div>
+
+            <div class="top-close">
+                <a href="index.html"><img src="images/close.svg" alt="Close"></a>
+            </div>
+        </div>
+
+        <div class="navigation-container" id="navigation-container"></div>
+        <div class="quiz-container" id="quiz-container"></div>
+    </div>
 </body>
 
 <script src="js/main.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/questions.js"></script>
 <script src="js/quiz.js"></script>
 
 </html>
