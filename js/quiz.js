@@ -2,8 +2,15 @@ window.onload = setQuiz();
 
 $(document).ready(function() {
     $('input[type="radio"').change(function() {
-        $('label.highlighted').removeClass('highlighted');
+        console.log($(this).prop('name'));
+        var sel = document.getElementsByName($(this).prop('name'));
+        $(sel).closest('.answer').removeClass('highlighted');
+        $(this.parentNode).addClass('highlighted');
+
+        /*
+        
         $(this).closest('.answer').addClass('highlighted');
+        */
     });
 });
 
@@ -61,7 +68,7 @@ $(document).ready(function() {
             nextButton.style.display = 'none';
             submitButton.style.display = 'none';
             previousButton.style.display = 'none';
-            navigationContainer.style.visibility = 'hidden';
+            navigationContainer.style.display = 'none';
         }
     }
 
@@ -117,9 +124,9 @@ $(document).ready(function() {
 
     function showSlideNav() {
         var n = parseInt(this.id, 10);
-        console.log(n);
         showSlide(n);
     }
+
     const myQuestions = window.QUESTIONS[localStorage.getItem('title')];
     const quizContainer = document.getElementById('quiz-container');
     const navigationContainer = document.getElementById('navigation-container');

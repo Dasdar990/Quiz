@@ -1,7 +1,7 @@
 window.TEMPLATES = {
     NAVIGATION_NUMBER: (questionNumber) =>
         `<div class="navigation-number" id="${questionNumber}">
-            ${questionNumber + 1}
+            <span class="number"> ${questionNumber + 1}</span>           
         </div>`,
     ANSWER: (letter, questionNumber, currentQuestion) =>
         `<label class="answer">
@@ -16,7 +16,7 @@ window.TEMPLATES = {
             </p>
             
             <div class="answer-label answer-label-x">
-                <img src="images/close.svg" alt="Close"/>
+                ${letter}
             </div>
         </label>`,
     BUTTONS: () =>
@@ -50,5 +50,5 @@ window.TEMPLATES = {
                 <p class="score-success">Quiz Completed Successfully.</p>
                 <p class="score-text" id="score-text"></p>
             </div>
-        </div>`,
+        </div>`
 };

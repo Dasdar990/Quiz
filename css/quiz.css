@@ -61,7 +61,6 @@
     width: 24px;
     border-radius: 30px;
     margin: 0 10px;
-    text-align: center;
 }
 
 .navigation-container>.navigation-number:first-child {
@@ -74,6 +73,13 @@
 
 .navigation-number-active {
     background: #e6812f;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
 }
 
 
@@ -137,8 +143,8 @@
     background-color: #ccdde7;
 }
 
-.answer-label-x>img {
-    filter: invert(60%) sepia(40%) saturate(3380%) hue-rotate(338deg) brightness(85%) contrast(85%);
+.answer-label-x {
+    color: #e6812f;
 }
 
 .answer.highlighted {
@@ -183,6 +189,7 @@
     background-color: #ccdde7;
     margin: 0 7.5px;
     white-space: nowrap;
+    max-width: 500px;
 }
 
 .button:focus {
