@@ -1,6 +1,10 @@
 (function() {
-    const locations = document.querySelectorAll('.quiz-location');
-    for (i = 0; i < locations.length; i++) locations[i].addEventListener('click', selectQuiz);
+    const e = document.querySelectorAll('.quiz-location');
+    const locations = ['Forest', 'Lake', 'Windmill', 'Farm', 'Market', 'Hotel', 'Green', 'Factory', 'Train', 'Tech'];
+    for (i = 0; i < e.length; i++) {
+        e[i].id = locations[i];
+        e[i].addEventListener('click', selectQuiz);
+    }
 })();
 
 function selectQuiz() {
