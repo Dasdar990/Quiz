@@ -8,7 +8,7 @@
 })();
 
 function selectQuiz() {
-    localStorage.setItem('title', this.innerText);
+    localStorage.setItem('title', $(this).children('.quiz-text')[0].innerText);
     localStorage.setItem('icon', $(this).children('.quiz-icon').children('img')[0].src);
     window.location = 'quiz.html';
 }
