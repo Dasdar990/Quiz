@@ -61,6 +61,7 @@
     width: 24px;
     border-radius: 30px;
     margin: 0 10px;
+    font-weight: 600;
 }
 
 .navigation-container>.navigation-number:first-child {
@@ -189,7 +190,7 @@
     background-color: #ccdde7;
     margin: 0 7.5px;
     white-space: nowrap;
-    max-width: 500px;
+    max-width: 350px;
 }
 
 .button:focus {
@@ -208,6 +209,11 @@
 .slide {
     display: none;
     padding: 30px;
+}
+
+.slide>.slide-container {
+    width: 100%;
+    max-width: 700px;
 }
 
 .slide.active {

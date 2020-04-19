@@ -102,7 +102,8 @@ $(document).ready(function() {
 
         var percentage = Math.trunc(numCorrect / myQuestions.length * 100);
         scorePercentage.innerHTML = ` ${percentage} % Score`;
-        resultsContainer.innerHTML = `text to customize ${numCorrect} out of ${myQuestions.length}`;
+        if (percentage < 50) congrats[0].innerHTML = `Oh no! You should try again`;
+        resultsContainer.innerHTML = `You got ${numCorrect} correct out of ${myQuestions.length}`;
     }
 
     function home() {
@@ -134,6 +135,9 @@ $(document).ready(function() {
     const errorContainer = document.getElementById('error');
     const slides = document.querySelectorAll('.slide');
     const navigators = document.querySelectorAll('.navigation-number');
+    const congrats = document.querySelectorAll('.score-congrats');
+
+    console.log(congrats);
 
     var currentSlide = 0;
     showSlide(currentSlide);
