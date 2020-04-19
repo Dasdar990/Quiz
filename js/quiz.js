@@ -6,11 +6,6 @@ $(document).ready(function() {
         var sel = document.getElementsByName($(this).prop('name'));
         $(sel).closest('.answer').removeClass('highlighted');
         $(this.parentNode).addClass('highlighted');
-
-        /*
-        
-        $(this).closest('.answer').addClass('highlighted');
-        */
     });
 });
 
