@@ -1,8 +1,11 @@
-function selectQuiz(id) {
-    var x = document.getElementById(id).querySelectorAll('*');
+(function() {
+    const locations = document.querySelectorAll('.quiz-location');
+    for (i = 0; i < locations.length; i++) locations[i].addEventListener('click', selectQuiz);
+})();
 
-    localStorage.setItem('title', x[2].innerText);
-    localStorage.setItem('icon', x[1].src);
+function selectQuiz() {
+    localStorage.setItem('title', this.innerText);
+    localStorage.setItem('icon', $(this).children('.quiz-icon').children('img')[0].src);
     window.location = 'quiz.html';
 }
 

@@ -2,7 +2,6 @@ window.onload = setQuiz();
 
 $(document).ready(function() {
     $('input[type="radio"').change(function() {
-        console.log($(this).prop('name'));
         var sel = document.getElementsByName($(this).prop('name'));
         $(sel).closest('.answer').removeClass('highlighted');
         $(this.parentNode).addClass('highlighted');
@@ -136,8 +135,6 @@ $(document).ready(function() {
     const slides = document.querySelectorAll('.slide');
     const navigators = document.querySelectorAll('.navigation-number');
     const congrats = document.querySelectorAll('.score-congrats');
-
-    console.log(congrats);
 
     var currentSlide = 0;
     showSlide(currentSlide);
