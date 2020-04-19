@@ -279,14 +279,33 @@
 
 /******************/
 
+.landscape-error {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background: #424242;
+}
+
+.landscape-error>span {
+    color: #000;
+}
+
+.landscape-error>img {
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-    html {
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        width: 100vh;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
+    .landscape-error {
+        display: flex;
+    }
+    .quiz {
+        display: none;
+    }
+    body {
+        background: #424242;
     }
 }
