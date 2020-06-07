@@ -330,6 +330,7 @@
     width: 100%;
     display: none;
     align-items: center;
+    justify-content: center;
     transition: ease 0.5s;
 }
 
