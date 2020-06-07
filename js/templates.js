@@ -42,12 +42,12 @@ window.TEMPLATES = {
         `<div class="slide">
             <div class="score-elements-container">
                 <div class="score-icon">
-                    <img src="images/score.svg" alt="Cup">
+                    <img src="images/happy.svg" alt="Face icon">
                 </div>
 
-                <p class="score-congrats">Congrats!</p>
+                <p class="score-congrats"></p>
                 <p class="score-percentage" id="score-percentage"></p>
-                <p class="score-success">Quiz Completed Successfully.</p>
+                <p class="score-success">Wait for your friends before adding the sticker to the map</p>
                 <p class="score-text" id="score-text"></p>
             </div>
         </div>`

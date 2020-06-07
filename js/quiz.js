@@ -81,7 +81,8 @@ $(document).ready(function() {
 
     function showResults() {
         if (!checkAll()) {
-            console.log('Error');
+            $('.error-container').css('display', 'flex');
+            $('.quiz').css('display', 'none');
             return;
         }
         const answerContainers = quizContainer.querySelectorAll('.answers-container');
@@ -101,7 +102,10 @@ $(document).ready(function() {
 
         var percentage = Math.trunc(numCorrect / myQuestions.length * 100);
         scorePercentage.innerHTML = ` ${percentage} % Score`;
-        if (percentage < 50) congrats[0].innerHTML = `Oh no! You should try again`;
+        if (percentage < 50) {
+            congrats[0].innerHTML = `Oh no! You should try again tomorrow`;
+            $('.score-icon>img').attr('src', 'images/sad.svg');
+        } else congrats[0].innerHTML = `You did it!`;
         resultsContainer.innerHTML = `You got ${numCorrect} correct out of ${myQuestions.length}`;
     }
 
@@ -122,6 +126,11 @@ $(document).ready(function() {
         showSlide(n);
     }
 
+    $('.error-box>img').click(function() {
+        $('.error-container').css('display', 'none');
+        $('.quiz').css('display', 'flex');
+    });
+
     const myQuestions = window.QUESTIONS[localStorage.getItem('title')];
     const quizContainer = document.getElementById('quiz-container');
     const navigationContainer = document.getElementById('navigation-container');
@@ -131,7 +140,6 @@ $(document).ready(function() {
     const nextButton = document.getElementById('next');
     const homeButton = document.getElementById('home');
     const submitButton = document.getElementById('submit');
-    const errorContainer = document.getElementById('error');
     const slides = document.querySelectorAll('.slide');
     const navigators = document.querySelectorAll('.navigation-number');
     const congrats = document.querySelectorAll('.score-congrats');

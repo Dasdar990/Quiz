@@ -270,6 +270,11 @@
     margin: 20px 0 0;
 }
 
+.score-icon img {
+    width: 100px;
+    height: 100px;
+}
+
 
 /******************/
 
@@ -308,4 +313,45 @@
     body {
         background: #424242;
     }
+}
+
+
+/******************/
+
+
+/* ERROR MESSAGE */
+
+
+/******************/
+
+.error-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    transition: ease 0.5s;
+}
+
+.error-box {
+    display: flex;
+    flex-flow: column;
+    background: #ccdde7;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.error-box p {
+    color: #2d3043;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.error-box img {
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+    margin: 2px 5px;
 }
