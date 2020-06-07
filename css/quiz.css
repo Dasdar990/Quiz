@@ -346,7 +346,7 @@
 }
 
 .error-box p {
-    color: #2d3043;
+    color: #000000;
     font-size: 14px;
     margin-bottom: 25px;
 }
@@ -355,5 +355,6 @@
     width: 24px;
     height: 24px;
     align-self: flex-end;
-    margin: 2px 5px;
+    margin: 2px 7px;
+    cursor: pointer;
 }
