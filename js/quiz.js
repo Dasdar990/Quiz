@@ -104,6 +104,7 @@ $(document).ready(function() {
         scorePercentage.innerHTML = ` ${percentage} % Score`;
         if (percentage < 50) {
             congrats[0].innerHTML = `Oh no! You should try again tomorrow`;
+            scoreSuccess[0].innerHTML = `Sorry, You cannot affix the sticker yet`;
             $('.score-icon>img').attr('src', 'images/sad.svg');
         } else congrats[0].innerHTML = `You did it!`;
         resultsContainer.innerHTML = `You got ${numCorrect} correct out of ${myQuestions.length}`;
@@ -143,6 +144,7 @@ $(document).ready(function() {
     const slides = document.querySelectorAll('.slide');
     const navigators = document.querySelectorAll('.navigation-number');
     const congrats = document.querySelectorAll('.score-congrats');
+    const scoreSuccess = document.querySelectorAll('.score-success');
 
     var currentSlide = 0;
     showSlide(currentSlide);
